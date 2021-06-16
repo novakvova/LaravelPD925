@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::resource("projects", ProjectController::class);
+
+Route::get("/cars",[\App\Http\Controllers\CarController::class, "Index"])->name("cars.index");
