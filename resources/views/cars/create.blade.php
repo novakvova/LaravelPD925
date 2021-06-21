@@ -3,5 +3,5 @@
     @csrf
     <input type="file" name="images[]" multiple >
     <input type="submit" value="додати">
-    <img src="{{asset('storage/files/profile-1623858985.jpg')}}" alt="">
+    <img src="{{asset('/storage/files/profile-60d08b8281d5a.jpg')}}" alt="">
 </form>

@@ -11,7 +11,7 @@ class CarController extends Controller
     {
         $cars = Car::query()->get();
         //dd($cars);
-        dd($cars[0]->CarImages);
+        //dd($cars[0]->CarImages);
     }
     public function Create(Request $request)
     {
@@ -31,7 +31,7 @@ class CarController extends Controller
 
                 // Save the file
                 $path = $file->storeAs('public\files', $fileName);
-                dd($path);
+                //dd($path);
             }
         }
         dd($request);
