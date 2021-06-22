@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/photos', [App\Http\Controllers\API\PhotoController::class, "index"]);
+Route::post('/photos/store', [App\Http\Controllers\API\PhotoController::class, "store"]);
+Route::get('/photos/show/{id}', [App\Http\Controllers\API\PhotoController::class, "show"]);
+Route::put('/photos/update/{id}', [App\Http\Controllers\API\PhotoController::class, "update"]);
+Route::delete('/photos/delete/{id}', [App\Http\Controllers\API\PhotoController::class, "destroy"]);
+//Route::apiResource('photos', 'PhotoController');

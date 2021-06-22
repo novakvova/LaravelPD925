@@ -12,6 +12,7 @@ class CarController extends Controller
         $cars = Car::query()->get();
         //dd($cars);
         //dd($cars[0]->CarImages);
+        return view("cars.index");
     }
     public function Create(Request $request)
     {
