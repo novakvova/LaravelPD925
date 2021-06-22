@@ -38,4 +38,9 @@ class CarController extends Controller
         dd($request);
         return view("cars.create");
     }
+
+    public function spa(Request $request)
+    {
+        return view("cars.spa");
+    }
 }
